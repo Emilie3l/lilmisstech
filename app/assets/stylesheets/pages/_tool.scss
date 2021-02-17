@@ -1,0 +1,137 @@
+.page-new-tool {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $body-font;
+
+  body {
+    background: #585c68;
+  }
+
+  .wrapper {
+    width: 800px;
+    margin: 100px auto 0;
+  }
+
+  .wrapper .title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container .option_item {
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+  }
+
+  .container .option_item .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .option_item .option_inner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 100px;
+    text-align: center;
+    padding: 40px 40px;
+    cursor: pointer;
+    color: #585c68;
+    display: block;
+    border: 5px solid transparent;
+    position: relative;
+  }
+
+  .option_item .option_inner .icon {
+    margin-bottom: 10px;
+  }
+
+  .option_item .option_inner .icon .fab {
+    font-size: 32px;
+  }
+
+  .option_item .option_inner .name {
+    user-select: none;
+  }
+
+  .option_item .checkbox:checked ~ .option_inner.facebook {
+    color: #3b5999;
+  }
+
+  .option_item .checkbox:checked ~ .option_inner.twitter {
+    color: #55acee;
+  }
+
+  .option_item .checkbox:checked ~ .option_inner.instagram {
+    color: #e4405f;
+  }
+
+  .option_item .checkbox:checked ~ .option_inner.linkedin {
+    color: #0077b5;
+  }
+
+  .option_item .checkbox:checked ~ .option_inner.whatsapp {
+    color: #25d366;
+  }
+
+  // .option_item .checkbox:checked ~ .option_inner.google {
+  //   border-color: #dd4b39;
+  //   color: #dd4b39;
+  // }
+
+  // .option_item .checkbox:checked ~ .option_inner.reddit {
+  //   border-color: #ff5700;
+  //   color: #ff5700;
+  // }
+
+  // .option_item .checkbox:checked ~ .option_inner.quora {
+  //   border-color: #b92b27;
+  //   color: #b92b27;
+  // }
+
+  .option_item .option_inner .tickmark:before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 15px;
+    height: 5px;
+    border: 3px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+  }
+
+  .option_item .checkbox:checked ~ .option_inner .tickmark {
+    display: block;
+  }
+}
+
+.fa-facebook-f {
+  font-size: 20px;
+}
+
+.tool-icon-lg {
+  height: 80%;
+  width: 100px;
+  object-fit: contain;
+}
+
+.tool-icon-lg-q {
+  height: 80%;
+  width: 80px;
+  object-fit: contain;
+}

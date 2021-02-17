@@ -1,1 +1,94 @@
+h1 {
+  font-size: 62px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(#00BBCC,#8670FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 24px;
+  color: $subh-color;
+  font-family: $body-font;
+  font-weight: 500;
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 90px;
+  padding-left: 160px;
+  padding-right: 80px;
+}
+
+.button-home {
+  align-items: left;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.text {
+  flex-grow: 3;
+  margin-right: 30px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  font-size: 24px;
+  background-color: $cta-color;
+  color: $bg-color;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: $cta-hover-color;
+  color: $cta-color;
+  border: 3px solid $cta-color;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 23px;
+  padding-left: 23px;
+}
+
+
+body {
+  background-color: $bg-color;
+}// Specific CSS for your home-page
+
+.launch {
+  font-size: 24px;
+  background-color: $cta-color;
+  color: $bg-color;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  letter-spacing: 1px;
+  align-items: left;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  width: 370px;
+  font-weight: bold;
+}
 // Specific CSS for your home-page

@@ -1,0 +1,22 @@
+.info-box {
+  text-align: left;
+  width: 700px;
+  border-radius: 15px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.confirmation-box {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.confirmation-text {
+  font-size: 18px;
+  font-weight: 600;
+  font-color: $cta-color;
+}

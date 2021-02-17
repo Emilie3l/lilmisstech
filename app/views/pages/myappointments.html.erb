@@ -1,0 +1,55 @@
+<div class="container">
+  <h1 class="login-text">My appointments</h1>
+  <div class="all-apt">
+    <% @appointments.each do |appointment| %>
+    <div class="card-product-show">
+      <div class="card-product">
+        <div class="apt-tool">
+          <% if appointment.tool == "Zoom" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1608131804/Saint-Emilion/MyStupidBug/zoom_logo_y9fmpk.png" />
+          <% elsif appointment.tool == "Linkedin" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1608133004/Saint-Emilion/MyStupidBug/Linkedin-logo_t7ydzi.png" />
+          <% elsif appointment.tool == "Photoshop" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1608133181/Saint-Emilion/MyStupidBug/ps_logo_incudw.png" />
+          <% elsif appointment.tool == "Notion" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1608133295/Saint-Emilion/MyStupidBug/notion_logo_rc0wx1.jpg" />
+          <% elsif appointment.tool == "Emails" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1611243262/StupidBug/mail_logo_pluahz.png" />
+          <% elsif appointment.tool == "Facebook" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1613155082/StupidBug/whatsapp_bvb17i.png" />
+          <% elsif appointment.tool == "Whatsapp" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1608131804/Saint-Emilion/MyStupidBug/zoom_logo_y9fmpk.png" />
+          <% elsif appointment.tool == "Wordpress" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1608131804/Saint-Emilion/MyStupidBug/zoom_logo_y9fmpk.png" />
+          <% elsif appointment.tool == "Facetime" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1613154913/StupidBug/facetime_logo_flyx7h.png" />
+          <% elsif appointment.tool == "Instagram" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1613154837/StupidBug/instagram_vyrtpk.jpg" />
+          <% elsif appointment.tool == "Excel" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1613154991/StupidBug/Microsoft_Excel-Logo_u42uvi.png" />
+          <% elsif appointment.tool == "Other" %>
+            <img class="tool-icon" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1611245306/StupidBug/question_mark_wpjv2d.png" />
+          <% end %>
+        </div>
+        <div class="card-product-infos">
+          <p class="card-date fas fa-calendar-day"></p> - <%= appointment.date.strftime('%a %b %d, %Y') %></p>
+          <p class="far fa-question-circle"></p> - <%= appointment.description %> / <%= appointment.operating_system %></p>
+        </div>
+        <img class="avatar-apt" alt="avatar-apt" src="https://kitt.lewagon.com/placeholder/users/sarahlafer" />
+        <div class="apt-status">
+          <% if appointment.completed == true %>
+            <p class="fas fa-check-circle"></p>
+          <% else %>
+        <div class="col-5 button-delete">
+          <%= link_to "", myappointments_path,
+              method: :delete,
+              data: { confirm: "Are you sure?" }, class: "button-delete fas fa-trash-alt" %>
+        </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+

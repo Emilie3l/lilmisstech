@@ -1,35 +1,37 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
+<div class="navbar navbar-expand-sm navbar-light navbar-stupidbug">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <div>
+      <%= image_tag "StupidBug-logo.png", class: "logo" %>
+    </div>
+  <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+        <li class="nav-item">
+          <%= link_to "My appointments", myappointments_path, class: "btn-nav" %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "My profile", edit_user_registration_path, class: "btn-nav" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
+          <%#= link_to "Log out", destroy_user_session_path, :method => :delete, class: "btn-nav" %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn-nav" %>
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Solutions", solutions_path, class: "btn-nav" %>
+        </li>
+        <li class="nav-item login">
+          <%#= link_to "Login", new_user_session_path, class: "btn-login" %>
+          <%= link_to "Login", comingsoon_path, class: "btn-login" %>
         </li>
       <% end %>
     </ul>
   </div>
 </div>
+
