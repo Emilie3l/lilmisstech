@@ -26,3 +26,16 @@
   padding-right: 23px;
   padding-left: 23px;
 }
+
+.coming-text {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+  .soon_box {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0px;
+  }
+}

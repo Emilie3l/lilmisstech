@@ -1,6 +1,6 @@
 .navbar-stupidbug {
   justify-content: space-between;
-  background: $bg-color;
+  background: transparent;
   padding-top: 20px;
   padding-right: 115px;
   padding-left: 135px;
@@ -66,4 +66,44 @@
   padding-bottom: 10px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
   border-radius: 3px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .navbar-toggler {
+    justify-content: right;
+    margin-left: 160px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    width: 300px;
+    justify-content: right;
+    margin-left: 30px;
+    line-height: 40px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .login {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn-nav {
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 1px;
+  color: $cta-color;
+  line-height: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
 }
