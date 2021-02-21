@@ -45,11 +45,14 @@
 
 .left-box {
   height: 70vh;
-  width: 50vw;
+  width: 100px;
   background-color: #E9E4FF;
   margin-bottom: 100px;
-  padding: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 60px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 .box-title {
@@ -57,8 +60,21 @@
   text-align: left;
 }
 
-.price-btn {
-  font-size: 24px;
+.box-pricing {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.box-text {
+  font-size: 18px;
+}
+
+.box-bullets {
+  font-size: 18px;
+}
+
+.btn-box {
+  font-size: 20px;
   background-color: $cta-color;
   color: $bg-color;
   line-height: 30px;
@@ -70,9 +86,11 @@
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
   font-weight: 500;
   letter-spacing: 1px;
+  align-items: left;
+  justify-content: space-evenly;
 }
 
-.price-btn:hover {
+.btn-box:hover {
   background-color: $cta-hover-color;
   color: $cta-color;
   border: 3px solid $cta-color;

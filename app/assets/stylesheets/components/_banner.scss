@@ -19,5 +19,16 @@
       border-radius: 5px;
       box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
   }
+
+  .box-banner {
+    background-image: asset-url('banner.png');
+    background-size: cover;
+    height: 480px;
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
+    margin-top: 50px;
+    z-index: -1;
+  }
 }
 
