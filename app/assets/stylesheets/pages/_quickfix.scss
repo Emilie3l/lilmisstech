@@ -1,0 +1,143 @@
+
+.quickfix-box {
+  padding: 50px;
+  height: 100vh;
+}
+
+.quickfix-title {
+  margin-top: 55px;
+  font-size: 50px;
+  margin-bottom: 70px;
+  font-weight: 700;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.quickfix-intro {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.solution {
+  justify-content: space-around;
+  padding-left: 30px;
+  margin-top: 100px;
+}
+
+.cta-text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.avatar-large {
+  width: 106px;
+}
+
+.tool-icons {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  margin-top: 100px;
+}
+
+.left-box {
+  height: 70vh;
+  width: 100px;
+  background-color: #E9E4FF;
+  margin-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 60px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.box-title {
+  font-size: 50px;
+  text-align: left;
+}
+
+.box-pricing {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.box-text {
+  font-size: 18px;
+}
+
+.box-bullets {
+  font-size: 18px;
+}
+
+.btn-box {
+  font-size: 20px;
+  background-color: $cta-color;
+  color: $bg-color;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  letter-spacing: 1px;
+  align-items: left;
+  justify-content: space-evenly;
+}
+
+.btn-box:hover {
+  background-color: $cta-hover-color;
+  color: $cta-color;
+  border: 3px solid $cta-color;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 23px;
+  padding-left: 23px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .left-box {
+    height: 100vh;
+    width: 100%;
+    background-color: #E9E4FF;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+  .box-title {
+    font-size: 30px;
+    text-align: left;
+    word-break: break-all;
+  }
+
+  .box-pricing {
+    margin-bottom: 50px;
+    font-size: 18px;
+    word-break: break-all;
+  }
+
+  .box-text {
+    font-size: 18px;
+    word-break: break-all;
+  }
+
+  .box-bullets {
+    font-size: 18px;
+    word-break: break-all;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+  .avatar-large {
+  width: 56px;
+  height: 56px;
+  }
+}

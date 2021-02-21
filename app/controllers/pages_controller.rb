@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :comingsoon, :solutions]
+  skip_before_action :authenticate_user!, only: [:home, :comingsoon, :quickfix, :expert]
 
   def home
   end
@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def comingsoon
   end
 
-  def solutions
+  def expert
+  end
+
+  def quickfix
   end
 end
