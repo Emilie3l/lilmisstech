@@ -1,6 +1,23 @@
-body.quickfix-page {
-  background-color: #E9E4FF;
-  min-height: 70vh;
+
+.quickfix-box {
+  padding: 50px;
+  height: 100vh;
+}
+
+.quickfix-title {
+  margin-top: 55px;
+  font-size: 50px;
+  margin-bottom: 70px;
+  font-weight: 700;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.quickfix-intro {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .solution {
@@ -9,17 +26,58 @@ body.quickfix-page {
   margin-top: 100px;
 }
 
-quickfix-page {
-  margin-top: 55px;
-  font-size: 35px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  color: white;
-  font-weight: bold;
+.cta-text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.avatar-large {
+  width: 106px;
+  border-radius: 50%;
+}
+
+.tool-icons {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  margin-top: 100px;
+}
+
+.left-box {
+  height: 70vh;
+  width: 50vw;
+  background-color: #E9E4FF;
+  margin-bottom: 100px;
+  padding: 100px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.box-title {
+  font-size: 50px;
   text-align: left;
+}
+
+.price-btn {
+  font-size: 24px;
+  background-color: $cta-color;
+  color: $bg-color;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
-.cta-text {
-  margin-top: 30px;
+.price-btn:hover {
+  background-color: $cta-hover-color;
+  color: $cta-color;
+  border: 3px solid $cta-color;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 23px;
+  padding-left: 23px;
 }
