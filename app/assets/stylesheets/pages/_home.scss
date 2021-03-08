@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 21px;
   color: black;
   font-family: $body-font;
   font-weight: 500;
@@ -38,7 +38,7 @@ h2 {
 .text {
   flex-grow: 3;
   margin-right: 30px;
-  margin-top: 60px;
+  margin-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -98,7 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 90px;
+  margin-top: 80px;
   padding-left: 160px;
   padding-right: 80px;
 }
