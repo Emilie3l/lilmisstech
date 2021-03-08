@@ -12,16 +12,17 @@
 
 @media (min-width: 1000px) {
   .banner {
-      background-image: asset-url('banner.png');
+      background-image: asset-url('banner-girl.png');
       background-size: cover;
       min-height: 550px;
       width: 180px;
       border-radius: 5px;
       box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
+      background-position: center;
   }
 
   .box-banner {
-    background-image: asset-url('banner.png');
+    background-image: asset-url('banner-girl.png');
     background-size: cover;
     height: 480px;
     width: 40px;
@@ -29,6 +30,7 @@
     box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
     margin-top: 50px;
     z-index: -1;
+    background-position: center;
   }
 }
 
